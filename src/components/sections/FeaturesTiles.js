@@ -3,6 +3,12 @@ import classNames from 'classnames';
 import { SectionTilesProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
+import FeatureTileIcon01 from '../../assets/images/feature-tile-icon-01.svg';
+import FeatureTileIcon02 from '../../assets/images/feature-tile-icon-02.svg';
+import FeatureTileIcon03 from '../../assets/images/feature-tile-icon-03.svg';
+import FeatureTileIcon04 from '../../assets/images/feature-tile-icon-04.svg';
+import FeatureTileIcon05 from '../../assets/images/feature-tile-icon-05.svg';
+import FeatureTileIcon06 from '../../assets/images/feature-tile-icon-06.svg';
 
 const propTypes = {
   ...SectionTilesProps.types
@@ -62,7 +68,7 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-02.svg')}
+                      src={FeatureTileIcon01}
                       alt="Features tile icon 02"
                       width={64}
                       height={64} />
@@ -84,7 +90,7 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-02.svg')}
+                      src={FeatureTileIcon02}
                       alt="Features tile icon 02"
                       width={64}
                       height={64} />
@@ -105,7 +111,7 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-02.svg')}
+                      src={FeatureTileIcon03}
                       alt="Features tile icon 02"
                       width={64}
                       height={64} />
@@ -126,7 +132,7 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-01.svg')}
+                      src={FeatureTileIcon04}
                       alt="Features tile icon 01"
                       width={64}
                       height={64} />
@@ -147,7 +153,7 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-02.svg')}
+                      src={FeatureTileIcon05}
                       alt="Features tile icon 02"
                       width={64}
                       height={64} />
@@ -169,7 +175,7 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/feature-tile-icon-03.svg')}
+                      src={FeatureTileIcon06}
                       alt="Features tile icon 03"
                       width={64}
                       height={64} />
