@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classNames from 'classnames';
 import { SectionTilesProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
@@ -9,7 +9,8 @@ import FeatureTileIcon03 from '../../assets/images/feature-tile-icon-03.svg';
 import FeatureTileIcon04 from '../../assets/images/feature-tile-icon-04.svg';
 import FeatureTileIcon05 from '../../assets/images/feature-tile-icon-05.svg';
 import FeatureTileIcon06 from '../../assets/images/feature-tile-icon-06.svg';
-
+import ModalFeature from '../elements/ModalFeature';
+import modalList from '../../utils/modalList.json';
 const propTypes = {
   ...SectionTilesProps.types
 }
@@ -28,6 +29,8 @@ const FeaturesTiles = ({
   pushLeft,
   ...props
 }) => {
+  const [modalActive, setModalActive] = useState(false);
+  const [currentModal, setCurrentModal] = useState(0);
 
   const outerClasses = classNames(
     'features-tiles section',
@@ -54,6 +57,21 @@ const FeaturesTiles = ({
     paragraph: 'Tecnología de vanguardía -- PC, PS5, Xbox series S/X, PS4, Xbox One, iOS, Android.'
   };
 
+  const openModal = (e) => {
+    e.preventDefault();
+    setModalActive(true);
+  }
+
+  const closeModal = (e) => {
+    e.preventDefault();
+    setModalActive(false);
+  }
+
+  const handleModalChanged = (index) => {
+    setCurrentModal(index);
+  }
+
+
   return (
     <section
       {...props}
@@ -68,6 +86,10 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
+                      onClick={(e) => {
+                        openModal(e);
+                        handleModalChanged(0);
+                      }}
                       src={FeatureTileIcon01}
                       alt="Features tile icon 02"
                       width={64}
@@ -90,6 +112,10 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
+                      onClick={(e) => {
+                        openModal(e);
+                        handleModalChanged(1);
+                      }}
                       src={FeatureTileIcon02}
                       alt="Features tile icon 02"
                       width={64}
@@ -111,6 +137,10 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
+                      onClick={(e) => {
+                        openModal(e);
+                        handleModalChanged(2);
+                      }}
                       src={FeatureTileIcon03}
                       alt="Features tile icon 02"
                       width={64}
@@ -132,6 +162,10 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
+                      onClick={(e) => {
+                        openModal(e);
+                        handleModalChanged(3);
+                      }}
                       src={FeatureTileIcon04}
                       alt="Features tile icon 01"
                       width={64}
@@ -153,6 +187,10 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
+                      onClick={(e) => {
+                        openModal(e);
+                        handleModalChanged(4);
+                      }}
                       src={FeatureTileIcon05}
                       alt="Features tile icon 02"
                       width={64}
@@ -175,6 +213,10 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
+                      onClick={(e) => {
+                        openModal(e);
+                        handleModalChanged(5);
+                      }}
                       src={FeatureTileIcon06}
                       alt="Features tile icon 03"
                       width={64}
@@ -193,8 +235,14 @@ const FeaturesTiles = ({
             </div>
           </div>
         </div>
+        <ModalFeature
+          modalActive={modalActive}
+          closeModal={closeModal}
+          modalDescription={modalList[currentModal].modalDescription}
+          modalImage={modalList[currentModal].modalImage}
+          modalTitle={modalList[currentModal].modalTitle} />
       </div>
-    </section>
+    </section >
   );
 }
 

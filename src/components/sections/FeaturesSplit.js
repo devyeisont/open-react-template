@@ -173,6 +173,9 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
+                  style={{
+                    maxHeight: '650px'
+                  }}
                   src={require('./../../assets/images/iphone.png')}
                   alt="Features split 02"
                   width={350}

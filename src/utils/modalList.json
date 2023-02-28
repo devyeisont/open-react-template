@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "modalTitle": "Xbox Series S/X",
+        "modalDescription": "La última generación de consolas de Microsoft, la Xbox Series S y la Xbox Series X, llegan con un hardware renovado y una nueva interfaz de usuario. La Xbox Series S es la consola más pequeña de la historia de Microsoft, y la Xbox Series X es la consola más potente de la historia de Microsoft. La Xbox Series S y la Xbox Series X se lanzarán el 10 de noviembre de 2020.",
+        "modalImage": "https://blogs.windows.com/wp-content/uploads/prod/sites/9/2020/11/e55222874f5a0f8977bde9b2cc8705ee.png"
+    },
+    {
+        "id": "2",
+        "modalTitle": "PS5",
+        "modalDescription": "La PlayStation 5 es la nueva consola de Sony, que llegará a las tiendas el 12 de noviembre de 2020. La PS5 es la consola más potente de la historia de Sony, y la primera consola de la compañía que incluye un SSD. La PS5 también incluye un lector de discos Blu-ray 4K, y un lector de tarjetas de memoria. La PS5 se lanzará en dos versiones: la PS5 Digital Edition, que no incluye un lector de discos, y la PS5 con lector de discos.",
+        "modalImage": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$"
+    },
+    {
+        "id": "3",
+        "modalTitle": "PS4",
+        "modalDescription": "La PlayStation 4 es la consola de sobremesa de Sony, que se lanzó en 2013. La PS4 es la consola más vendida de la historia, con más de 110 millones de unidades vendidas. La PS4 se lanzó en dos versiones: la PS4 y la PS4 Slim. La PS4 Pro es una versión mejorada de la PS4, que se lanzó en 2016. La PS4 Pro incluye un procesador más potente y un disco duro más grande.",
+        "modalImage": "https://gmedia.playstation.com/is/image/SIEPDC/ps4-product-thumbnail-01-en-14sep21?$facebook$"
+    },
+    {
+        "id": "4",
+        "modalTitle": "PC",
+        "modalDescription": "PC de escritorio, portátil, todo en uno, mini PC, etc.",
+        "modalImage": "https://www.compulago.net/wp-content/uploads/erp/productos/2323%2006334747/1667593775513.png"
+    },
+    {
+        "id": "5",
+        "modalTitle": "iOS",
+        "modalDescription": "iPhone, iPad, iPod Touch, etc.",
+        "modalImage": "https://tecnomobil.com.co/wp-content/uploads/2021/06/1624383877633.png"
+    },
+    {
+        "id": "6",
+        "modalTitle": "Android",
+        "modalDescription": "Smartphones, tablets, etc.",
+        "modalImage": "https://sc04.alicdn.com/kf/Hf513939f9bfc42e0bb13d5877066a2957.png"
+    }
+]
