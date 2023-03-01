@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import Modal from 'react-modal';
 import '../../assets/scss/components/ModalFeature.scss';
 import 'photoswipe/dist/photoswipe.css'
@@ -68,7 +68,6 @@ const ModalFeature = ({
           marginRight: 'auto',
           border: '1px solid #ccc',
           background: '#151719',
-          borderRadius: '4px',
           outline: 'none',
           padding: '20px',
           width: '50vw',
