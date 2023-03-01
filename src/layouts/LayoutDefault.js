@@ -17,6 +17,7 @@ const LayoutDefault = ({ children }) => (
         statusMessage='Normalmente respondemos en unos minutos.'
         placeholder='Escriba su mensaje...'
         avatar={ControlPS5}
+        chatboxHeight='500px'
         allowEsc
         allowClickAway
         notification
