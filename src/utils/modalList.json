@@ -9,13 +9,27 @@
         "id": "2",
         "modalTitle": "PS5",
         "modalDescription": "La PlayStation 5 es la nueva consola de Sony, que llegará a las tiendas el 12 de noviembre de 2020. La PS5 es la consola más potente de la historia de Sony, y la primera consola de la compañía que incluye un SSD. La PS5 también incluye un lector de discos Blu-ray 4K, y un lector de tarjetas de memoria. La PS5 se lanzará en dos versiones: la PS5 Digital Edition, que no incluye un lector de discos, y la PS5 con lector de discos.",
-        "modalImage": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$"
+        "modalImage": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$",
+        "arrayImages": [
+            "ps5-mw2-2.jpeg",
+            "ps5-mw2.jpeg"
+        ]
     },
     {
         "id": "3",
         "modalTitle": "PS4",
         "modalDescription": "La PlayStation 4 es la consola de sobremesa de Sony, que se lanzó en 2013. La PS4 es la consola más vendida de la historia, con más de 110 millones de unidades vendidas. La PS4 se lanzó en dos versiones: la PS4 y la PS4 Slim. La PS4 Pro es una versión mejorada de la PS4, que se lanzó en 2016. La PS4 Pro incluye un procesador más potente y un disco duro más grande.",
-        "modalImage": "https://gmedia.playstation.com/is/image/SIEPDC/ps4-product-thumbnail-01-en-14sep21?$facebook$"
+        "modalImage": "https://gmedia.playstation.com/is/image/SIEPDC/ps4-product-thumbnail-01-en-14sep21?$facebook$",
+        "arrayImages": [
+            "ps4-camuflado-2.jpeg",
+            "ps4-camuflado.jpeg",
+            "ps4-fifa23-calloduty-vanguard.jpeg",
+            "ps4-gold-2.jpeg",
+            "ps4-gold.jpeg",
+            "ps4-spiderman.jpeg",
+            "ps4-testimonio.jpeg",
+            "ps4.jpeg"
+        ]
     },
     {
         "id": "4",

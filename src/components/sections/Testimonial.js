@@ -2,6 +2,9 @@ import React from 'react';
 import classNames from 'classnames';
 import { SectionTilesProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
+import TestimonioPS4 from '../../assets/images/yume/testimonio-ps4-uncharted.jpeg';
+import TestimonioFifa23 from '../../assets/images/yume/testimonio-fifa-23.jpeg';
+import TestimonioMortalKombat from '../../assets/images/yume/testimonio-mortal-kombat.jpeg';
 
 const propTypes = {
   ...SectionTilesProps.types
@@ -61,16 +64,10 @@ const Testimonial = ({
             <div className="tiles-item reveal-from-right" data-reveal-delay="200">
               <div className="tiles-item-inner">
                 <div className="testimonial-item-content">
-                  <p className="text-sm mb-0"> 
-                  Personalmente tuve una buena experiencia de compra en video juegos yume , llego en tiempo y forma. 
-                  </p>
+                  <img src={TestimonioPS4} alt="Testimonio PS4 Uncharted" />
                 </div>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                  <span className="testimonial-item-name text-color-high">Sebastian arboleda</span>
-                  <span className="text-color-low"> / </span>
-                  <span className="testimonial-item-link">
-                    <a href="#0">sitio web</a>
-                  </span>
+                  <span className="testimonial-item-name text-color-high">Gustavo (Cordoba)</span>
                 </div>
               </div>
             </div>
@@ -78,15 +75,10 @@ const Testimonial = ({
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
                 <div className="testimonial-item-content">
-                  <p className="text-sm mb-0">
-                  Las cosas que he comprado han llegado bien y oportunamente , todo ha resultado de maravilla, llegan bien los productos y a tiempo  </p>
+                  <img src={TestimonioFifa23} alt="Testimonio FIFA 23" />
                 </div>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                  <span className="testimonial-item-name text-color-high">Yeison Garzon</span>
-                  <span className="text-color-low"> / </span>
-                  <span className="testimonial-item-link">
-                    <a href="#0">Sitio web</a>
-                  </span>
+                  <span className="testimonial-item-name text-color-high">Raul Perez</span>
                 </div>
               </div>
             </div>
@@ -94,16 +86,10 @@ const Testimonial = ({
             <div className="tiles-item reveal-from-left" data-reveal-delay="200">
               <div className="tiles-item-inner">
                 <div className="testimonial-item-content">
-                  <p className="text-sm mb-0">
-                    Chimba de atencion y muy buenos productos.
-                      </p>
+                  <img src={TestimonioMortalKombat} alt="Testimonio Mortal Kombat" />
                 </div>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                  <span className="testimonial-item-name text-color-high">Saymon Granados</span>
-                  <span className="text-color-low"> / </span>
-                  <span className="testimonial-item-link">
-                    <a href="#0">Sitio web</a>
-                  </span>
+                  <span className="testimonial-item-name text-color-high">Lucas Bustamante</span>
                 </div>
               </div>
             </div>

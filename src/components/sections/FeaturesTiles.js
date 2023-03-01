@@ -11,6 +11,7 @@ import FeatureTileIcon05 from '../../assets/images/feature-tile-icon-05.svg';
 import FeatureTileIcon06 from '../../assets/images/feature-tile-icon-06.svg';
 import ModalFeature from '../elements/ModalFeature';
 import modalList from '../../utils/modalList.json';
+
 const propTypes = {
   ...SectionTilesProps.types
 }
@@ -240,7 +241,9 @@ const FeaturesTiles = ({
           closeModal={closeModal}
           modalDescription={modalList[currentModal].modalDescription}
           modalImage={modalList[currentModal].modalImage}
-          modalTitle={modalList[currentModal].modalTitle} />
+          modalTitle={modalList[currentModal].modalTitle}
+          arrayImages={modalList[currentModal].arrayImages ? modalList[currentModal].arrayImages : null}
+          />
       </div>
     </section >
   );
