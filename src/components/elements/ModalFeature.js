@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Modal from 'react-modal';
 import '../../assets/scss/components/ModalFeature.scss';
 import 'photoswipe/dist/photoswipe.css'
@@ -21,6 +21,19 @@ const ModalFeature = ({
   modalDescription,
   arrayImages
 }) => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+}
+useEffect(() => {
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+        window.removeEventListener('resize', handleWindowSizeChange);
+    }
+}, []);
+
+const isMobile = width <= 768;
 
   const getImage = (imageName) => {
     switch (imageName) {
@@ -70,7 +83,8 @@ const ModalFeature = ({
           background: '#151719',
           outline: 'none',
           padding: '20px',
-          width: '50vw',
+          //react style property with media query 50vw desktop and 90vw mobile
+          width: isMobile ? '90vw' : '50vw',
           borderRadius: '20px',
         },
       }}
