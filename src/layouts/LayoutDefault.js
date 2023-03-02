@@ -10,14 +10,14 @@ const LayoutDefault = ({ children }) => (
       {children}
     </main>
     <FloatingWhatsApp 
-        phoneNumber="+573005130337"
+        phoneNumber="+573043300628"
         accountName="Yume Juegos"
         textReplyTime="Por favor envíenos un mensaje y nos pondremos en contacto con usted lo antes posible."
         chatMessage='Hola, ¿En qué podemos ayudarle?'
         statusMessage='Normalmente respondemos en unos minutos.'
         placeholder='Escriba su mensaje...'
         avatar={ControlPS5}
-        chatboxHeight='500px'
+        chatboxHeight='400px'
         allowEsc
         allowClickAway
         notification
